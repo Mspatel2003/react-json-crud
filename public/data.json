@@ -1,0 +1,42 @@
+[
+    {
+        "id": "SCP-002",
+        "name": "Object Class: Euclid",
+        "description": "SCP-002 resembles a tumorous, fleshy growth with a volume of roughly 60 m³ (or 2000 ft³). An iron valve hatch on one side leads to its interior, which appears to be a standard low-rent apartment of modest size. One wall of the room possesses a single window, though no such opening is visible from the exterior. The room contains furniture which, upon close examination, appears to be sculpted bone, woven hair, and various other biological substances produced by the human body. All matter tested thus far show independent or fragmented DNA sequences for each object in the room. SCP-002 is a large, spherical object resembling a furnished living room. It exhibits anomalous properties when individuals enter.",
+        "containment_procedures": "SCP-002 must remain in a secured chamber at Site-. Only authorized personnel may enter SCP-002.",
+        "special_notes": "Entering SCP-002 without proper authorization will result in immediate termination.",
+        "image": "/src/assets/800px-SCP002.jpg"
+    },
+    {
+        "id": "SCP-003",
+        "name": "Object Class: Euclid",
+        "description": "SCP-003 is an organic computer system that processes information through biological means.",
+        "containment_procedures": "SCP-003 is to be housed in a reinforced biological containment unit. Interaction with SCP-003 should be minimized.",
+        "special_notes": "SCP-003 appears to communicate through a form of organic signals.",
+        "image": "/src/assets/003.jpg"
+    },
+    {
+        "id": "SCP-004",
+        "name": "Object Class: Euclid",
+        "description": "SCP-004 consists of 12 rusted keys and a door. Each key opens a different door to various locations.",
+        "containment_procedures": "The keys and door must be kept in a locked secure chamber. Access is restricted to authorized research personnel.",
+        "special_notes": "The doors opened by the keys may lead to different dimensions or hazardous environments.",
+        "image": "/src/assets/SCP004_door.jpg"
+    },
+    {
+        "id": "SCP-005",
+        "name": "Object Class: Euclid",
+        "description": "SCP-005 is a standard computer that displays anomalous behavior when connected to any network.",
+        "containment_procedures": "SCP-005 must be kept disconnected from any external network and monitored for unusual activity.",
+        "special_notes": "SCP-005 can manipulate data in ways not yet fully understood.",
+        "image": "/src/assets/SCP-005.jpg"
+    },
+    {
+        "id": "SCP-006",
+        "name": "Object Class: Safe",
+        "description": "SCP-006 is a small pool of water with anomalous properties. It has the ability to heal minor wounds and illnesses but does not affect severe injuries or diseases.",
+        "containment_procedures": "SCP-006 must be kept disconnected from any external network and monitored for unusual activity.",
+        "special_notes": "SCP-006 can manipulate data in ways not yet fully understood.",
+        "image": "/src/assets/scp 006.jpg"
+    }
+]

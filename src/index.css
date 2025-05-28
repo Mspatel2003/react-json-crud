@@ -1,0 +1,225 @@
+/* Root Styles */
+:root {
+  --primary-color: #4c80e6;
+  --secondary-color: #ff6347;
+  --background-dark: #1c1c1c;
+  --background-light: #f5f5f5;
+  --text-dark: #333;
+  --text-light: #f0f0f0;
+  --button-bg: #4c80e6;
+  --button-hover-bg: #3a6ecf;
+  --link-hover-color: #ff6347;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-alt: 'Roboto', sans-serif;
+  --border-radius: 12px;
+  --transition-duration: 0.3s;
+}
+
+/* Global Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+/* Heading Styles */
+h1, h2 {
+  font-family: var(--font-family-alt), sans-serif;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2em;
+  color: var(--primary-color);
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Link Styles */
+a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-duration), transform var(--transition-duration), text-shadow 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  transform: scale(1.05);
+  text-decoration: underline;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styles */
+button {
+  background-color: var(--button-bg);
+  color: var(--text-light);
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--primary-color);
+}
+
+/* Card Layout */
+.card {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+  text-align: center;
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration), background-color var(--transition-duration);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px var(--shadow-dark);
+}
+
+.card h2 {
+  font-size: 2.2em;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Logo Styles */
+.logo {
+  height: 8em;
+  width: 8em;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px var(--shadow-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.logo img {
+  height: 80%;
+  width: auto;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px var(--shadow-dark);
+}
+
+/* Image Styling for other parts */
+img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+
+  .card {
+    background-color: #333;
+    box-shadow: 0 4px 20px var(--shadow-dark);
+  }
+
+  h1, h2, p {
+    color: var(--text-light);
+  }
+
+  a {
+    color: var(--secondary-color);
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+  }
+
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .card {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  button {
+    padding: 0.6em 1.5em;
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 6em;
+    width: 6em;
+  }
+}
